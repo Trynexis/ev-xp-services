@@ -3,47 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>EV & XP Services</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    @font-face {
-      font-family: 'Cal Sans';
-      src: url(/CalSans-Regular.ttf) format('truetype');
-    }
-    body {
-      font-family: 'Cal Sans', Cal Sans;
-    }
-    .pokemonFormBlock {
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-    .form-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .form-box {
-      flex: 1 1 300px;
-    }
-    .box {
-        width: 110px;
-        height: 20px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
+
   </style>
 </head>
 <body>
-  <h1>Trynexis' EV & XP Services</h1>
-
-  <div class="box">
-    <a href="/changelogs.html">Changelogs</a></div><br>
-
-    <img src="https://cdn.discordapp.com/attachments/1362299686664409182/1362329924870078575/EXPEV.png?ex=6820fb5c&is=681fa9dc&hm=0fbeddf3c2bc26186111570a9c5333c98502e9088b848bc96ea9827f80561d6f&" alt="Logo" width="400"><br>
+  <h1>Trynexis' EV & XP Services</h1><div class="box"><a href="/changelogs.html">Changelogs</a></div>
+  <br>
+  <div class="box2">
+      <a href="/tutorial.html"><b>How do I use this?</b></a></div><br><br>
+    <img src="/photos/EXP&EV.png" alt="Expense chart" width="400"><br>
     <p><b>For further calculations: </b>0.25 Pokeyen per EXP</p><br>
-    <p><b>(Note: </b>Please calculate the expenses by yourself, GitHub only lets me post static webpages which means that no backend processes will work which I need for calculating the expenses.)</p>
+    <p><b>(Note: </b>Please calculate the expenses by yourself, GitHub only lets me post static webpages which means that no backend processes will work which I need for calculating the expenses.)</p><br>
+    </div>
   <label for="number">How many Pokémon do you want leveled?</label><br>
   <input type="number" id="number" placeholder="Enter a number" min="1"><br><br>
 
@@ -52,7 +25,6 @@
   <button id="submitForm">Submit</button>
   <div id="successMessage" style="color: green; display: none;">Form sent successfully!</div>
 
-  <!-- Template for each Pokémon form -->
   <template id="pokemonFormTemplate">
     <div class="pokemonFormBlock form-box">
       <h3>Pokémon</h3>
